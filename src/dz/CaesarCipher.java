@@ -2,7 +2,7 @@ package dz;
 
 public class CaesarCipher {
 
-        public static String encrypt(String message, int shiftKey) {
+    public static String encrypt(String message, int shiftKey) {
         final String alpha = "abcdefghijklmnopqrstuvwxyz";
 
         message = message.toLowerCase();
@@ -15,17 +15,6 @@ public class CaesarCipher {
         }
         return cipherText.toString();
     }
-//    String decipher(String message, int offset) {
-//        return encrypt(message, 26 - (offset % 26));
-//    }
-//
-//    public static StringBuilder decoder(String message, StringBuilder chiper,  int shiftKe){
-//        final String alpha = "abcdefghijklmnopqrstuvwxyz";
-//
-//        message = message.toLowerCase();
-//
-//        return null;
-//    }
 
     static String decipher(String message, int offset) {
         return encrypt(message, 26 - (offset % 26));

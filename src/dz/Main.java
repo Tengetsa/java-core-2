@@ -13,7 +13,7 @@ public class Main {
     private static void task1() {
         int[] arr = {1, 3, 2, 6, 9, 10, 1, 10, 2, 5, 4, 9, 6, 10};
         int maxValue = 10;
-        int [] sortedArray = SortingByCounting.countingSort(arr, maxValue);
+        int[] sortedArray = SortingByCounting.countingSort(arr, maxValue);
 
         System.out.println("Исходный массив:" + Arrays.toString(arr));
         System.out.println("Отсортированный:" + Arrays.toString(sortedArray));
@@ -33,8 +33,7 @@ public class Main {
 //        int decryptionKey = encryptedKey * -1;
         int decryptionKey = sc.nextInt();
         System.out.println("\nРасшифрованое сообщение: " + CaesarCipher.decipher(message, decryptionKey));
-        }
-
+    }
 
 
     private static void task3() {
